@@ -23,6 +23,9 @@ function setMarker(marker, newNum, markerMaxLength){
 
 for (let i=0; i<data.length; i++){
     const result = setMarker(marker, data[i], 4)
+    console.log('Getestet wird jetzt: ', data[i])
+    await new Promise( resolve => setTimeout(resolve, 20))
+    console.log('Der Marker ist jetzt: ', marker)
     if (result.done) {
         stop = i +1
         break}
