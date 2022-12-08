@@ -69,6 +69,7 @@ function countTreesInAxis(ownHeight, trees){
 
 function renderView(top, bottom, left, right){
     let string = ''
+    console.log('TASK 2')
     console.log('Highest Score yet: ', Math.max(...count), 'Trees count: ', count.length)
     for(let i = 0; i<top+bottom+2; i++){
         for (let j=0 ; j<right+left+2; j++){
