@@ -52,7 +52,7 @@ for(let row=1; row<forest.length-1; row++){
 console.log('Trees visible inside', count)
 addSurround()
 console.log('Task 1 - Trees visible with surrounding: ', count)
-
+await new Promise(resolve => setTimeout(resolve, 3000))
 
 // TASK 2: Scenic view
 
